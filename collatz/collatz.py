@@ -63,6 +63,11 @@ def plot_points(points):
     plt.show()
 
 
+def build_collatz_graph(nums):
+    points = aggregate_points(nums)
+    plot_points(points)
+
+
 if __name__ == "__main__":
     # nums = [2,4,17]
     nums = list(range(2,500))
