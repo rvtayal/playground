@@ -58,18 +58,19 @@ def aggregate_points(nums):
 def plot_points(points):
     fig, ax = plt.subplots()
     for i in range(points.shape[-1]):
-        ax.plot(points[0,:, i], points[1,:, i])
+        ax.plot(points[0,:, i], points[1,:, i], 'k')
     ax.axis('equal')
-    plt.show()
+    return ax
 
 
 def build_collatz_graph(nums):
     points = aggregate_points(nums)
-    plot_points(points)
+    return plot_points(points)
 
 
 if __name__ == "__main__":
     # nums = [2,4,17]
-    nums = list(range(2,500))
+    nums = list(range(2,10))
     points = aggregate_points(nums)
-    plot_points(points)
+    f = plot_points(points)
+    plt.savefig('results/collatz_tree.png')

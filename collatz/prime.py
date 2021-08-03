@@ -23,4 +23,4 @@ def get_n_primes(n):
 
 if __name__ == "__main__":
     nums = get_n_primes(50)
-    collatz.build_collatz_graph(nums)
+    collatz.build_collatz_graph(list(range(2,1000)))
