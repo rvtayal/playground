@@ -324,6 +324,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/VSSettingsProvider.ref.dll"
 "Assets/Scripts/HelloWorldManager.cs"
 "Assets/Scripts/HelloWorldPlayer.cs"
+"Assets/Scripts/PlayerMovement.cs"
 -langversion:8.0
 
 /deterministic

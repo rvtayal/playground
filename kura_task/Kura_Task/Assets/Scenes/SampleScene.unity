@@ -504,7 +504,7 @@ MonoBehaviour:
     - SampleScene
     AllowRuntimeSceneChanges: 0
     NetworkPrefabs:
-    - Prefab: {fileID: 2410892729101776172, guid: 8d8e6ff4a57734c49baa5757703aca63, type: 3}
+    - Prefab: {fileID: 3684092357592727024, guid: 8d8e6ff4a57734c49baa5757703aca63, type: 3}
       PlayerPrefab: 1
     PlayerPrefabHash:
       id: 0
@@ -535,7 +535,7 @@ MonoBehaviour:
     00000000:
       type: {class: NullableBoolSerializable, ns: MLAPI.Configuration, asm: Unity.Multiplayer.MLAPI.Runtime}
       data:
-        Value: 1897319656204293034
+        Value: 0
 --- !u!4 &2049015570
 Transform:
   m_ObjectHideFlags: 0
