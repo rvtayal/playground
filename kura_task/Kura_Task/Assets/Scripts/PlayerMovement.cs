@@ -9,6 +9,8 @@ public class PlayerMovement : NetworkBehaviour
     CharacterController cc;
     public Transform cameraTransform;
     float pitch = 0f;
+    public float playerSpeed = 5f;
+    public float lookSensitivity = 3f;
 
     // Start is called before the first frame update
     void Start()
@@ -36,14 +38,14 @@ public class PlayerMovement : NetworkBehaviour
         Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         move = Vector3.ClampMagnitude(move, 1.0f);
         move = transform.TransformDirection(move);
-        cc.SimpleMove(move * 5f);
+        cc.SimpleMove(move * playerSpeed);
     }
 
 
     void Look() {
-        float mousex = Input.GetAxis("Mouse X") * 3f;
+        float mousex = Input.GetAxis("Mouse X") * lookSensitivity;
         transform.Rotate(0,mousex, 0);
-        pitch -= Input.GetAxis("Mouse Y") * 3f;
+        pitch -= Input.GetAxis("Mouse Y") * lookSensitivity;
         pitch = Mathf.Clamp(pitch, -45f, 45f);
         cameraTransform.localRotation = Quaternion.Euler(pitch, 0, 0);
     }
