@@ -62,6 +62,8 @@
     <Compile Include="Assets\Scripts\HelloWorldManager.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\HelloWorldPlayer.cs" />
+    <Compile Include="Assets\Scripts\DoorBehavior.cs" />
+    <Compile Include="Assets\Scripts\PlayerBehavior.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
